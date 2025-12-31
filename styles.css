@@ -377,6 +377,18 @@ section:nth-child(even) {
     color: var(--text-primary);
 }
 
+.publication-title-link {
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.publication-title-link:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
 .publication-authors {
     color: var(--text-secondary);
     margin-bottom: 0.25rem;
@@ -722,6 +734,60 @@ section:nth-child(even) {
     color: var(--text-secondary);
     line-height: 1.7;
     margin-bottom: 0.75rem;
+}
+
+/* Patents Section */
+.patents-section {
+    margin-top: 4rem;
+}
+
+.patents-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.patent-item {
+    background-color: var(--bg-primary);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    gap: 1.5rem;
+    transition: var(--transition);
+}
+
+.patent-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+.patent-icon {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+}
+
+.patent-content h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+}
+
+.patent-content p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 0.5rem;
+}
+
+.patent-content p:last-child {
+    margin-bottom: 0;
+}
+
+.patent-content em {
+    color: var(--primary-color);
+    font-style: italic;
 }
 
 /* Memberships Section */
